@@ -32,7 +32,7 @@ local globals = run_marsik_code('var = 1; print(var)')
 ```js
 // JavaScript
 const globals = run_marsik_code(`var = 1; print(var)`);
--- globals.var -> 1
+// globals.var -> 1
 ```
 
 The return value is the script's **global environment table**. You can read variables from it directly:
