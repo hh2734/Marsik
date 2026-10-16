@@ -73,7 +73,7 @@ Nestable block comments use `<<<` and `>>>`:
 
 ### Variables
 
-```marsik
+```lua
 x = 10              <<< global >>>
 local y = 20        <<< local to current scope >>>
 a, b, c = 1, 2, 3   <<< multiple assignment >>>
@@ -96,7 +96,7 @@ a, b, c = 1, 2, 3   <<< multiple assignment >>>
 
 ### Control flow
 
-```marsik
+```lua
 if x > 5 do
     print("big")
 elseif x > 0 do
@@ -119,7 +119,7 @@ while true do break end
 
 Named functions:
 
-```marsik
+```lua
 func add(a, b) do
     return a + b
 end
@@ -127,13 +127,13 @@ end
 
 Anonymous functions:
 
-```marsik
+```lua
 local f = func(x) do return x * 2 end
 ```
 
 Multiple return values:
 
-```marsik
+```lua
 func swap(a, b) do
     return b, a
 end
@@ -145,7 +145,7 @@ x, y = swap(1, 2)
 
 Tables are the only compound data structure. They map keys to values and also work as arrays
 
-```marsik
+```lua
 arr = {1; 2; 3; 4; 5}
 print(arr[1], #arr)          <<< 1   5 >>>
 
@@ -159,7 +159,7 @@ mixed = {1; 2; key = "value"; ["computed"] = 100}
 
 Functions can be attached directly to table keys:
 
-```marsik
+```lua
 obj = {}
 
 func obj.method(a, b) do
@@ -220,7 +220,7 @@ Plus constants `pi` and `huge`
 
 ## Example
 
-```marsik
+```lua
 <<< comment >>>
 print("Hello, world!")
 
