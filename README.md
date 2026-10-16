@@ -1,6 +1,6 @@
 # Marsik
 
-A tiny scripting language that helps different languages talk to each other.
+A tiny scripting language that helps different languages talk to each other
 
 Marsik is a small, complete mini-language you can embed into other programming languages. It's much smaller than Lua and leans on the host language to do the heavy lifting. Think of it as a little *lingua franca* between runtimes. More host languages are planned
 
@@ -249,10 +249,10 @@ print("Lang:", var.lang, "| v:", var.)
 
 ## Design notes
 
-- **Small** The whole interpreter is one file per host language
-- **No VM, no bytecode** It's a direct tree-walking interpreter that uses the host runtime for numbers, strings, containers, and closures
-- **Host-friendly** `run_marsik_code` returns the globals table, so the host can read and write script variables directly
-- **Same behavior everywhere** All hosts aim to run the same script the same way
+- **Small.** The whole interpreter is one file per host language
+- **No VM, no bytecode.** It's a direct tree-walking interpreter that uses the host runtime for numbers, strings, containers, and closures
+- **Host-friendly.** `run_marsik_code` returns the globals table, so the host can read and write script variables directly
+- **Same behavior everywhere.** All hosts aim to run the same script the same way
 
 ---
 
